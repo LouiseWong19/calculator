@@ -34,11 +34,19 @@ body {
   background-color: #857E7D;
   margin-top: 50px;
   display: grid;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 2px 1px rgba(252, 238, 237, 0.2);
 }
 .calculator .calculator__body .calculator__output {
   height: 200px;
-  background-color: #FCEEED;
+  background-color: #141414;
   border: 1px solid black;
+  display: grid;
+  justify-content: end;
+  align-items: end;
+  padding: 10px;
+  border-radius: 10px;
 }
 .calculator .calculator__body .calculator__btn {
   display: grid;
@@ -46,10 +54,11 @@ body {
   grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 .calculator .calculator__body .calculator__btn > button {
-  font-size: 14px;
+  font-size: 18px;
   background-color: #FCEEED;
-  border: 1px solid black;
   color: #141414;
+  font-family: "Bebas Neue", cursive;
+  border-radius: 10px;
 }
 .calculator .calculator__body .calculator__btn > button:first-child {
   grid-row: 1/1;
