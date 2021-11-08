@@ -1,0 +1,15 @@
+@import "_variables.scss";
+
+$primary-font: 'Bebas Neue', cursive;
+
+body{
+  font-family: $primary-font;
+}
+
+h1{
+  font-size: 48px;
+  text-align: center;
+}
+
+// font-family: 'PT Sans Narrow', sans-serif;
+// font-family: 'Roboto', sans-serif;
