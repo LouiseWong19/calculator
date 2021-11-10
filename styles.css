@@ -38,7 +38,7 @@ body {
   border-radius: 10px;
   box-shadow: 5px 5px 2px 1px rgba(252, 238, 237, 0.2);
 }
-.calculator .calculator__body .calculator__output {
+.calculator .calculator__body .calculator__display {
   height: 200px;
   background-color: #141414;
   border: 1px solid black;
@@ -47,6 +47,13 @@ body {
   align-items: end;
   padding: 10px;
   border-radius: 10px;
+  justify-items: center;
+}
+.calculator .calculator__body .calculator__display .calculator__input {
+  font-size: 28px;
+}
+.calculator .calculator__body .calculator__display .calculator__output {
+  font-size: 24px;
 }
 .calculator .calculator__body .calculator__btn {
   display: grid;
