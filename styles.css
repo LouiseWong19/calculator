@@ -51,9 +51,19 @@ body {
 }
 .calculator .calculator__body .calculator__display .calculator__input {
   font-size: 28px;
+  width: 150px;
+  height: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 .calculator .calculator__body .calculator__display .calculator__output {
   font-size: 24px;
+  width: 150px;
+  height: 85px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 .calculator .calculator__body .calculator__btn {
   display: grid;

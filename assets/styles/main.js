@@ -40,7 +40,7 @@ acBtn.addEventListener("click",() =>{
 // Operator Buttons//
 operBtn.forEach((operatorBtn) => {
   operatorBtn.addEventListener("click", () =>{
-    savedValue = parseInt(firstValue.join(""));
+    savedValue = parseFloat(firstValue.join(""));
      firstValue = [];
      operator = operatorBtn.value;
      displayInput.innerHTML += operatorBtn.innerText; //need to fix restricting only one oper
@@ -55,13 +55,13 @@ const result = () =>{
     answer = parseFloat(firstValue.join("")) * savedValue;
     displayOutput.innerHTML = answer;
   }else if (operator === "/"){
-    answer = parseFloat(firstValue.join("")) / savedValue;
+    answer =  savedValue / parseFloat(firstValue.join(""));
     displayOutput.innerHTML = answer;
   }else if (operator === "+"){
     answer = parseFloat(firstValue.join("")) + savedValue;
     displayOutput.innerHTML = answer;
   }else if (operator === "-"){
-    answer = parseFloat(firstValue.join("")) - savedValue;
+    answer = savedValue - parseFloat(firstValue.join(""));
     displayOutput.innerHTML = answer;
   }
 }
@@ -69,7 +69,7 @@ const result = () =>{
 equalBtn.addEventListener("click",result)
 
 //fix the operators
-
+//check 3dc point 
 
 // const equal = (firstValue, savedValue, answer, operatorBtn) =>{
 //   currentValue = parseInt(firstValue.join(""));
