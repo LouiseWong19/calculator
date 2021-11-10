@@ -69,25 +69,29 @@ body {
 }
 .calculator .calculator__body .calculator__btn > button:first-child {
   grid-row: 1/1;
-  grid-column: 4/6;
+  grid-column: 5/6;
 }
 .calculator .calculator__body .calculator__btn > button:nth-child(2) {
-  grid-row: 2/2;
+  grid-row: 1/1;
   grid-column: 4/5;
 }
 .calculator .calculator__body .calculator__btn > button:nth-child(3) {
   grid-row: 2/2;
-  grid-column: 5/6;
+  grid-column: 4/5;
 }
 .calculator .calculator__body .calculator__btn > button:nth-child(4) {
-  grid-row: 3/3;
-  grid-column: 4/5;
+  grid-row: 2/2;
+  grid-column: 5/6;
 }
 .calculator .calculator__body .calculator__btn > button:nth-child(5) {
   grid-row: 3/3;
-  grid-column: 5/6;
+  grid-column: 4/5;
 }
 .calculator .calculator__body .calculator__btn > button:nth-child(6) {
+  grid-row: 3/3;
+  grid-column: 5/6;
+}
+.calculator .calculator__body .calculator__btn > button:nth-child(7) {
   grid-row: 4/4;
   grid-column: 4/6;
 }
