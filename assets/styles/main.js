@@ -35,6 +35,7 @@ acBtn.addEventListener("click",() =>{
   operator = "";
   displayOutput.innerHTML=firstValue;
   displayInput.innerHTML=savedValue;
+  console.clear()
 })
 
 // Operator Buttons//
@@ -53,16 +54,16 @@ operBtn.forEach((operatorBtn) => {
 const result = () =>{
   if (operator === "*"){
     answer = parseFloat(firstValue.join("")) * savedValue;
-    displayOutput.innerHTML = answer;
+    displayOutput.innerHTML = answer.toFixed(3);
   }else if (operator === "/"){
     answer =  savedValue / parseFloat(firstValue.join(""));
-    displayOutput.innerHTML = answer;
+    displayOutput.innerHTML = answer.toFixed(3);
   }else if (operator === "+"){
     answer = parseFloat(firstValue.join("")) + savedValue;
-    displayOutput.innerHTML = answer;
+    displayOutput.innerHTML = answer.toFixed(3);
   }else if (operator === "-"){
     answer = savedValue - parseFloat(firstValue.join(""));
-    displayOutput.innerHTML = answer;
+    displayOutput.innerHTML = answer.toFixed(3);
   }
 }
 
