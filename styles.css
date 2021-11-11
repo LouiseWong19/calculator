@@ -48,6 +48,8 @@ body {
   padding: 10px;
   border-radius: 10px;
   justify-items: center;
+  box-shadow: -2px 1px 1px 1px rgba(252, 238, 237, 0.45);
+  overflow: hidden;
 }
 .calculator .calculator__body .calculator__display .calculator__input {
   font-size: 28px;

@@ -44,51 +44,28 @@ operBtn.forEach((operatorBtn) => {
     savedValue = parseFloat(firstValue.join(""));
      firstValue = [];
      operator = operatorBtn.value;
-     displayInput.innerHTML += operatorBtn.innerText; //need to fix restricting only one oper
+     displayInput.innerHTML += operatorBtn.innerText; 
   })
 })
 
 
 // Equal Button // 
-
 const result = () =>{
-  if (operator === "*"){
-    answer = parseFloat(firstValue.join("")) * savedValue;
-    displayOutput.innerHTML = answer.toFixed(3);
-  }else if (operator === "/"){
-    answer =  savedValue / parseFloat(firstValue.join(""));
-    displayOutput.innerHTML = answer.toFixed(3);
-  }else if (operator === "+"){
-    answer = parseFloat(firstValue.join("")) + savedValue;
-    displayOutput.innerHTML = answer.toFixed(3);
-  }else if (operator === "-"){
-    answer = savedValue - parseFloat(firstValue.join(""));
-    displayOutput.innerHTML = answer.toFixed(3);
+    if (operator === "*"){
+      answer = parseFloat(firstValue.join("")).toFixed(5) * savedValue.toFixed(5);
+      displayOutput.innerHTML = answer;
+    }else if (operator === "/"){
+      answer =  savedValue.toFixed(5) / parseFloat(firstValue.join("")).toFixed(5);
+      displayOutput.innerHTML = answer;
+    }else if (operator === "+"){
+      answer = parseFloat(firstValue.join("")) + savedValue;
+      displayOutput.innerHTML = answer.toFixed(3);
+    }else if (operator === "-"){
+      answer = savedValue - parseFloat(firstValue.join(""));
+      displayOutput.innerHTML = answer.toFixed(3);
+    }
   }
-}
 
 equalBtn.addEventListener("click",result)
 
-//fix the operators
-//check 3dc point 
-
-// const equal = (firstValue, savedValue, answer, operatorBtn) =>{
-//   currentValue = parseInt(firstValue.join(""));
-//   switch (operatorBtn){
-//     case "+":
-//       answer = currentValue + savedValue;
-//       break;
-//     case "-":
-//     answer = currentValue - savedValue;
-//     break;
-//     case "×":
-//     answer = currentValue * savedValue;
-//     break;
-//     case "÷":
-//     answer = currentValue % savedValue;
-//     break;
-//   }
-// }
-
-//  equalBtn.addEventListener("click", equal);
 
