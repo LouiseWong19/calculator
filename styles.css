@@ -67,47 +67,47 @@ body {
   justify-content: flex-end;
   align-items: flex-end;
 }
-.calculator .calculator__body .calculator__btn {
+.calculator .calculator__body .calculator__buttons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
 }
-.calculator .calculator__body .calculator__btn > button {
+.calculator .calculator__body .calculator__buttons > button {
   font-size: 18px;
   background-color: #FCEEED;
   color: #141414;
   font-family: "Bebas Neue", cursive;
   border-radius: 10px;
 }
-.calculator .calculator__body .calculator__btn > button:first-child {
+.calculator .calculator__body .calculator__buttons > button:first-child {
   grid-row: 1/1;
   grid-column: 5/6;
 }
-.calculator .calculator__body .calculator__btn > button:nth-child(2) {
+.calculator .calculator__body .calculator__buttons > button:nth-child(2) {
   grid-row: 1/1;
   grid-column: 4/5;
 }
-.calculator .calculator__body .calculator__btn > button:nth-child(3) {
+.calculator .calculator__body .calculator__buttons > button:nth-child(3) {
   grid-row: 2/2;
   grid-column: 4/5;
 }
-.calculator .calculator__body .calculator__btn > button:nth-child(4) {
+.calculator .calculator__body .calculator__buttons > button:nth-child(4) {
   grid-row: 2/2;
   grid-column: 5/6;
 }
-.calculator .calculator__body .calculator__btn > button:nth-child(5) {
+.calculator .calculator__body .calculator__buttons > button:nth-child(5) {
   grid-row: 3/3;
   grid-column: 4/5;
 }
-.calculator .calculator__body .calculator__btn > button:nth-child(6) {
+.calculator .calculator__body .calculator__buttons > button:nth-child(6) {
   grid-row: 3/3;
   grid-column: 5/6;
 }
-.calculator .calculator__body .calculator__btn > button:nth-child(7) {
+.calculator .calculator__body .calculator__buttons > button:nth-child(7) {
   grid-row: 4/4;
   grid-column: 4/6;
 }
-.calculator .calculator__body .calculator__btn > button:last-child {
+.calculator .calculator__body .calculator__buttons > button:last-child {
   grid-row: 4/4;
   grid-column: 2/4;
 }
